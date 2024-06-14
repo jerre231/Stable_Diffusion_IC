@@ -19,10 +19,10 @@ def plt_graph(file_path, weight):
     for i in range(file_path):
         image_size = os.path.getsize(file_path[i])
         file_size[i].append(image_size)
-    
+
     plt.figure(figsize=10, weight)
     for i in range(weight):
-        plt.plot(range(1, weight+1), file_size[i][0], marker='o', label=f'Image{i+1}')
+        plt.plot(range(1, weight+1), ()file_size[i][0]/(512*512*3)), marker='o', label=f'Image{i+1}')
 
     plt.title('Peso x Complexidade')
     plt.xlabel('Peso')
