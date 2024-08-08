@@ -17,5 +17,6 @@ pkgs.mkShell {
   ];
 
   shellHook = ''
+    export PYTHONPATH=$PYTHONPATH:${pkgs.python3.sitePackages}
   '';
 }
