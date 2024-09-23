@@ -27,7 +27,7 @@ in pkgs.mkShell {
     export PYTHONPATH=$PYTHONPATH:${pkgs.python3.sitePackages}
     echo "Starting Ollama..."
     nohup ollama serve &>/dev/null &
-   
+
     echo "Pulling llava:"
     ollama pull llava
   '';
